@@ -4,13 +4,25 @@ Created on 22 févr. 2023
 @author: pascal
 '''
 
-class HundredExpression(object):
+from pattern.romanExpression import RomanExpression
+
+class HundredExpression(RomanExpression):
     '''
     classdocs
     '''
+    HUNDRED = 100
 
+    def one(self):
+        return 'C'
 
-    def __init__(self, params):
-        '''
-        Constructor
-        '''
+    def four(self):
+        return 'CD'
+
+    def five(self):
+        return 'D'
+
+    def nine(self):
+        return 'CM'
+
+    def multiplier(self):
+        return self.HUNDRED
