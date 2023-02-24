@@ -7,15 +7,11 @@ import unittest
 from pattern.romanInterpreter import RomanInterpreter
 
 class RomanInterpreterTest(unittest.TestCase):
-
-
     def setUp(self):
         pass
 
-
     def tearDown(self):
         pass
-
 
     def test_compute(self):
         interpreter = RomanInterpreter()
