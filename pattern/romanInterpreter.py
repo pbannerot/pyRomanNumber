@@ -11,6 +11,8 @@ from pattern.tenExpression import TenExpression
 from pattern.hundredExpression import HundredExpression
 from pattern.thousandExpression import ThousandExpression
 
+logging.getLogger().setLevel(logging.INFO)
+
 class RomanInterpreter(object):
     '''
     classdocs
@@ -44,3 +46,8 @@ class RomanInterpreter(object):
 
     def set_result(self, result):
         self.result = result
+
+if __name__ == "__main__":
+    roman_interpreter = RomanInterpreter()
+    roman_interpreter.compute("L")
+
